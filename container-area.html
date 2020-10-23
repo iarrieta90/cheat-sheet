@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheat Sheet</title>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h2>Area</h2>
+      </header>
+      <section>
+        <h3>Description</h3>
+        <p>
+          The &lt;area&gt; tag defines an area inside an image map (an image map
+          is an image with clickable areas).
+        </p>
+        <p>&lt;area&gt; elements are always nested inside a &lt;map&gt; tag.</p>
+        <h3>Example</h3>
+        <h4>Code Example</h4>
+        <code>
+          <pre>
+            &lt;p&gt;Click on the bicycle, the wheels, or the saddle to go to a new page and read more about the topic:&lt;/p&gt;
+
+            &lt;img src="https://www.copakeauction.com/ws/wp-content/uploads/2016/08/21_1.jpg" alt="Bicycle" usemap="#bikemap" width="1342" height="1080"&gt;
+
+            &lt;map name="bikemap"&gt;
+                &lt;area shape="circle" coords="34,44,270,350" alt="First wheel" href="firstWheel.htm"&gt;
+                &lt;area shape="circle" coords="290,172,333,250" alt="Second wheel" href="secondWheel.htm"&gt;
+                &lt;area shape="poly" coords="337,300,44" alt="Saddle" href="saddle.htm"&gt;
+            &lt;/map&gt;
+          </pre>
+        </code>
+
+        <h4>HTML Result</h4>
+        <p>
+          Click on the bicycle, the wheels, or the saddle to go to a new page
+          and read more about the topic:
+        </p>
+        <img
+          src="https://www.copakeauction.com/ws/wp-content/uploads/2016/08/21_1.jpg"
+          alt="Bicycle"
+          usemap="#bikemap"
+          width="1342"
+          height="1080"
+        />
+        <map name="bikemap">
+          <area
+            shape="circle"
+            coords="34,44,270,350"
+            alt="First wheel"
+            href="firstWheel.htm"
+          />
+          <area
+            shape="circle"
+            coords="290,172,333,250"
+            alt="Second wheel"
+            href="secondWheel.htm"
+          />
+          <area
+            shape="poly"
+            coords="337,300,44"
+            alt="Saddle"
+            href="saddle.htm"
+          />
+        </map>
+      </section>
+    </article>
+    <a href="containers.html">BACK</a>
+  </body>
+</html>

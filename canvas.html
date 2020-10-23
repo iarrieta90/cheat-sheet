@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+</head>
+<body>
+    <header>
+        <h2>Canvas</h2>
+      </header>
+      <hr>
+      <section>
+        <h3>Description</h3>
+        <p>The <code>&lt;canvas&gt;</code> tag is used to draw graphics, on the fly, via scripting</p>
+        <p>The <code>&lt;canvas&gt;</code> tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.</p>
+        <h3>Example</h3>
+        <h4>Code Example</h4>
+          <p>
+              <code>
+                <pre>
+                    &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;canvas id="myCanvas">Your browser does not support the canvas tag.&gt;&lt;/canvas&gt;
+                        &lt;script&gt;
+                            var c = document.getElementById("myCanvas1");
+                            var ctx = c.getContext("2d");
+                            ctx.fillStyle = "red";
+                            ctx.fillRect(0, 0, 80, 100);
+                        &lt;/script&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+
+                    &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;canvas id="myCanvas">Your browser does not support the canvas tag.&gt;&lt;/canvas&gt;
+                        &lt;script&gt;
+                            var c = document.getElementById("myCanvas2");
+                            var ctx = c.getContext("2d");
+                            ctx.fillStyle = "blue";
+                            ctx.fillRect(0, 0, 80, 100);
+                        &lt;/script&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>   
+              </code> 
+          </p>
+
+        <h4>HTML Result</h4>
+            <canvas id="myCanvas1">Your browser does not support the canvas tag.</canvas>
+            <script>
+                var c = document.getElementById("myCanvas1");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 80, 100);
+            </script>
+            <canvas id="myCanvas2">Your browser does not support the canvas tag.</canvas>
+            <script>
+                var c = document.getElementById("myCanvas2");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "blue";
+                ctx.fillRect(0, 0, 80, 100);
+            </script>
+      </section>
+      
+      <a href="index.html">BACK</a>
+</body>
+</html>
