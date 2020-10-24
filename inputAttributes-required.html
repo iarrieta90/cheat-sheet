@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>required Attribute</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>The required Attribute</h2>
+        </header>
+        <section>
+            <h3>Description</h3>
+            <p>The input <strong>required</strong> attribute specifies that an input field must be filled out before submitting the form.</p>
+            <p>The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.</p>
+        </section>
+        <section>
+            <h3>Example</h3>
+            <h4>Code Example:</h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;The input required attribute&lt;/h2&gt;
+                    &lt;p&gt;The required attribute specifies that an input field must be filled out before submitting the form.&lt;/p&gt;
+                    &lt;form action="/action_page.php"&gt;
+                        &lt;label for="username">Username:&lt;/label&gt;
+                        &lt;input type="text" id="username" name="username" required&gt;
+                        &lt;input type="submit" value="Submit">
+                        &lt;/form&gt;
+                    &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;The required attribute of the input tag is not supported in Safari prior version 10.1.&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h4>HTML Result:</h4>
+                <h2>The input required attribute</h2>
+                <p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+                <form action="/action_page.php">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <input type="submit" value="Submit">
+                </form>
+                <p><strong>Note:</strong> The required attribute of the input tag is not supported in Safari prior version 10.1.</p>
+        </section>
+    </article>
+    <a href="inputAttributes.html">BACK</a>
+</body>
+</html>
