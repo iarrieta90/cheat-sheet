@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input types range</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>Range</h2>
+    </header>
+    <hr />
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>
+          The <code>&lt;input type="range"&gt;</code> defines a control for
+          entering a number whose exact value is not important (like a slider
+          control).
+        </p>
+        <p>
+          Default range is 0 to 100. However, you can set restrictions on what
+          numbers are accepted with the attributes below.
+        </p>
+        <ul>
+          <li><strong>max</strong> - specifies the maximum value allowed</li>
+          <li><strong>min</strong> - specifies the minimum value allowed</li>
+          <li>
+            <strong>step</strong> - specifies the legal number intervals
+          </li>
+          <li><strong>value</strong> - Specifies the default value</li>
+        </ul>
+        <p>
+          <strong>Tip: </strong>Always add the <code>&lt;label&gt;</code> tag
+          for best accessibility practices!
+        </p>
+      </div>
+    </section>
+    <section>
+      <h3>Example</h3>
+      <section>
+        <h4>Code Example</h4>
+        <pre>
+        <code>
+            &lt;h5&gt;Display a Range Field&lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="vol"&gt;Volume (between 0 and 50):&lt;/label&gt;
+                &lt;input type="range" id="vol" name="vol" min="0" max="50" /&gt;
+                &lt;input type="submit" /&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+      </section>
+      <section>
+        <h4>HTML Result</h4>
+        <div>
+          <h5>Display a Range Field</h5>
+          <form action="/action_page.php">
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50" />
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+    </section>
+    <br />
+  </article>
+  <br />
+  <a href="inputTypes.html">BACK</a>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input types email</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>Email</h2>
+    </header>
+    <hr />
+
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>
+          The <code>&lt;input type="email"&gt;</code> defines a field for an
+          e-mail address. control.
+        </p>
+        <p>
+          The input value is automatically validated to ensure it is a
+          properly formatted e-mail address.
+        </p>
+        <p>
+          To define an e-mail field that allows multiple e-mail addresses, add
+          the "multiple" attribute.
+        </p>
+        <p>
+          <strong>Tip:</strong>Always add the <code>&lt;label&gt;</code> tag
+          for best accessibility practices!
+        </p>
+      </div>
+    </section>
+    <br />
+    <section>
+      <h3>Example</h3>
+      <section>
+        <h4>Code Example</h4>
+        <pre>
+        <code>
+            &lt;h5&gt;
+                Show an email field (allows only one email address):
+            &lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="email">Enter your email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email" /&gt;
+                &lt;input type="submit" /&gt;
+            &lt;form&gt;
+            &lt;h5&gt;
+                Show an email field (allows multiple email addresses). Separate
+                each email address with a comma:
+            &lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="emails"&gt;Enter email addresses:&lt;/label&gt;
+                &lt;input type="email" id="emails" name="emails" multiple /&gt;
+                &lt;input type="submit" /&gt;
+            &lt;/form&gt;
+          </code>
+          </pre>
+      </section>
+      <br />
+      <section>
+        <h4>HTML Result</h4>
+        <div>
+          <h5>Show an email field (allows only one email address):</h5>
+          <form action="/action_page.php">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" />
+            <input type="submit" />
+          </form>
+          <h5>
+            Show an email field (allows multiple email addresses). Separate
+            each email address with a comma:
+          </h5>
+          <form action="/action_page.php">
+            <label for="emails">Enter email addresses:</label>
+            <input type="email" id="emails" name="emails" multiple />
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+    </section>
+    <br />
+  </article>
+  <br />
+  <a href="inputTypes.html">BACK</a>
+</body>
+
+</html>

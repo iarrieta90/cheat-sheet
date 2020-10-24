@@ -1,74 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Text</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Text</title>
+</head>
+
+<body>
+  <header>
+    <h1>TEXT</h1>
+  </header>
+  <hr />
+
+  <article>
     <header>
-      <h1>TEXT</h1>
+      <h2>Strong</h2>
     </header>
-    <hr />
-   <a href="index.html">BACK</a> 
-    <article>
-      <header>
-        <h2>Strong</h2>
-      </header>
+    <section>
+      <h3>Description</h3>
+      <p>The <code>&lt;strong&gt;</code> tag is used to define text with strong importance. The content inside is
+        typically displayed in <b>bold</b></p>
+    </section>
+    <section>
+      <h3>Example</h3>
       <section>
-        <h3>Description</h3>
-        <p>The <code>&lt;strong&gt;</code> tag is used to define text with strong importance. The content inside is typically displayed in <b>bold</b></p>
-        <h3>Example</h3>
         <h4>Code Example</h4>
-        <p>
-          <pre>
+        <pre>
           <code>&lt;html&gt;</code><br>
           <code>&lt;body&gt;</code><br>
             <code>&lt;p&gt;This text is normal.&lt;/p&gt;</code><br>
             <code>&lt;p&gt;&lt;strong&gt;This text is important!&lt;/strong&gt;&lt;/p&gt;</code><br>
           <code>&lt;/body&gt;</code><br>
           <code>&lt;/html&gt;</code><br>
-          </pre>
-        </p>
-        <h4>HTML Result</h4>
-        <p>
-
-            <p>This text is normal.</p>
-            <p><strong>This text is important!</strong></p>
-        </p>
-      </section>
-    </article><br>
-  
-    <article>
-      <header>
-        <h2>Strikethrough</h2>
-      </header>
-      <section>
-        <h3>Description</h3>
-        <p>The &lt;del&gt; tag is used to define deleted text:</p>
-        <h3>Example</h3>
-        <h4>Code Example</h4>
-        <code>
-          <pre>
-          &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt;&lt;ins&gt;red&lt;/ins&gt;&lt;/p&gt;
         </pre>
-        </code>
+      </section>
+      <h4>HTML Result</h4>
+      <p>This text is normal.</p>
+      <p><strong>This text is important!</strong></p>
+    </section>
+  </article><br>
+
+  <article>
+    <header>
+      <h2>Strikethrough</h2>
+    </header>
+    <section>
+      <h3>Description</h3>
+      <p>The <code>&lt;del&gt;</code> tag is used to define deleted text</p>
+    </section>
+    <section>
+      <h3>Example</h3>
+      <section>
+        <h4>Code Example</h4>
+        <pre>
+          <code>
+            &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt;&lt;ins&gt;red&lt;/ins&gt;&lt;/p&gt;
+          </code>
+        </pre>
+      </section>
+      <section>
         <h4>HTML Result</h4>
         <p>My favorite color is <del>blue</del> <ins>red</ins> </p>
       </section>
-    </article><br>
-    
-    <article>
-      <header>
-        <h2>Italics</h2>
-      </header>
+    </section>
+  </article><br>
+
+  <article>
+    <header>
+      <h2>Italics</h2>
+    </header>
+    <section>
+      <h3>Description</h3>
+      <p>The <code>&lt;i&gt;</code> tag defines a part of text in an alternate voice or mood. The content inside is
+        typically displayed in <i>italic</i>
+    </section>
+    <section>
+      <h3>Example</h3>
       <section>
-        <h3>Description</h3>
-        <p>The <code>&lt;i&gt;</code> tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in <i>italic</i>.
-        <h3>Example</h3>
         <h4>Code Example</h4>
-        <p>
-          <pre>
+        <pre>
           <code>&lt;html&gt;</code><br>
           <code>&lt;body&gt;</code><br>
           <code>&lt;p&gt;The&lt;i&gt;RMS Titanic&lt;/i&gt;, is the most popular filler text in history.&lt;/p&gt;</code><br>
@@ -76,51 +87,75 @@
           <code>&lt;/body&gt;</code><br>
           <code>&lt;/html&gt;</code><br>
           </pre>
-        </p>
-        <h4>HTML Result</h4>
-        <p>
-            <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
-            <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
-        </p>
       </section>
-    </article><br>
+      <section>
+        <h4>HTML Result</h4>
+        <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+        <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+      </section>
+    </section>
 
-    <article>
-      <header>
+  </article><br>
+
+  <article>
+    <header>
       <h2>Subscript</h2>
     </header>
-    <section> 
+    <section>
       <h3>Description</h3>
-      <p>The &lt;sub&gt; tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H<sub>2</sub>O.</p>
+      <p>The <code>&lt;sub&gt;</code> tag defines subscript text. Subscript text appears half a character below the
+        normal line,
+        and
+        is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like
+        H<sub>2</sub>O.
+      </p>
+    </section>
+    <section>
       <h3>Example</h3>
-      <h4>Code Example</h4>
-      <code>
+      <section>
+        <h4>Code Example</h4>
         <pre>
+          <code>
           &lt;p&gt;This text contains &lt;sub&gt;subscript&lt;/sub&gt; text.&lt;/p&gt;
-      </pre>
-      </code>
-      <h4>HTML Result</h4>
-      <p>This text contains <sub>subscript</sub> text.</p>
+        </code>
+        </pre>
+      </section>
+      <section>
+        <h4>HTML Result</h4>
+        <p>This text contains <sub>subscript</sub> text.</p>
+      </section>
     </section>
   </article><br>
-      
+
   <article>
     <header>
       <h2>Superscript</h2>
     </header>
     <section>
       <h3>Description</h3>
-      <p>The &lt;sup&gt; tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW<sup>1</sup>.</p>
-      <h3>Example</h3>
-      <h4>Code Example</h4>
-      <code>
-        <pre>
-        &lt;p&gt;This text contains &lt;sup&gt;superscript&gt;&lt;sup&gt; text.&lt;/p&gt;
-      </pre>
-      </code>
-      <h4>HTML Result</h4>
-      <p>This text contains <sup>subscript</sup> text.</p>
+      <p>The <code>&lt;sup&gt;</code> tag defines superscript text. Superscript text appears half a character above
+        the normal
+        line,
+        and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW<sup>1</sup>.
+      </p>
     </section>
-  </article>
-  </body>
+    <section>
+      <h3>Example</h3>
+      <section>
+        <h4>Code Example</h4>
+        <pre>
+        <code>
+          &lt;p&gt;This text contains &lt;sup&gt;superscript&gt;&lt;/sup&gt; text.&lt;/p&gt;
+        </code>
+      </pre>
+      </section>
+      <section>
+        <h4>HTML Result</h4>
+        <p>This text contains <sup>subscript</sup> text.</p>
+      </section>
+    </section><br>
+  </article><br>
+  <a href="index.html">BACK</a>
+</body>
+
 </html>

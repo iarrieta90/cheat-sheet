@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input types submit</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>Submit</h2>
+    </header>
+    <hr />
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>
+          The <code>&lt;input type="submit"&gt;</code> defines a submit button
+          which submits all form values to a form-handler.
+        </p>
+        <p>
+          The form-handler is typically a server page with a script for
+          processing the input data.
+        </p>
+        <p>The form-handler is specified in the form's action attribute.</p>
+      </div>
+    </section>
+    <section>
+      <br />
+      <h3>Example</h3>
+      <section>
+        <h4>Code Example</h4>
+        <pre>
+        <code>
+            &lt;h5&gt;Display a Submit Button&lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="fname"&gt;First name: &lt;/label&gt;
+                &lt;input type="text" id="fname" name="fname" /&gt;&lt;br&gt;&lt;br&gt;
+                &lt;label for="lname"&gt;Last name: &lt;/label&gt;
+                &lt;input type="text" id="lname" name="lname" /&gt;&lt;br&gt;&lt;br&gt;
+                &lt;input type="submit" value="Submit" /&gt;
+            &lt;/form&gt; 
+            &lt;p&gt;
+              If you click the "Submit" button, the form-data will be sent to a
+              page called "/action_page.php".
+            &lt;/p&gt;
+          </code>
+        </pre>
+      </section>
+      <section>
+        <h4>HTML Result</h4>
+        <div>
+          <h5>Display a Submit Button</h5>
+          <form action="/action_page.php">
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname" /><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+          <p>
+            If you click the "Submit" button, the form-data will be sent to a
+            page called "/action_page.php".
+          </p>
+        </div>
+      </section>
+    </section>
+    <br />
+  </article>
+  <br />
+  <a href="inputTypes.html">BACK</a>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input types radio</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>Radio</h2>
+    </header>
+    <hr />
+    <section>
+      <h3>Description</h3>
+      <p>
+        The <code>&lt;input type="radio"&gt;</code> defines a radio button.
+      </p>
+      <p>
+        Radio buttons are normally presented in radio groups (a collection
+        of radio buttons describing a set of related options). Only one
+        radio button in a group can be selected at the same time.
+      </p>
+      <p>
+        <strong>Note: </strong>The radio group must have share the same name
+        (the value of the name attribute) to be treated as a group. Once the
+        radio group is created, selecting any radio button in that group
+        automatically deselects any other selected radio button in the same
+        group. You can have as many radio groups on a page as you want, as
+        long as each group has its own name.
+      </p>
+      <p>
+        <strong>Note: </strong>The value attribute defines the unique value
+        associated with each radio button. The value is not shown to the
+        user, but is the value that is sent to the server on "submit" to
+        identify which radio button that was selected.
+      </p>
+      <p>
+        <strong>Tip: </strong>Always add the <code>&lt;label&gt;</code> tag
+        for best accessibility practices!
+      </p>
+    </section>
+    <br />
+    <section>
+      <h3>Example</h3>
+      <section>
+        <h4>Code Example</h4>
+        <pre>
+            <code>
+            &lt;h5&gt;Display Radio Buttons&lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;p&gt;Please select your gender:&lt;/p&gt;
+                &lt;input type="radio" id="male" name="gender" value="male" /&gt;
+                &lt;label for="male"&gt;Male&lt;/label&gt;&lt;br&gt;
+                &lt;input type="radio" id="female" name="gender" value="female" /&gt;
+                &lt;label for="female"&gt;Female&lt;/label&gt;&lt;br&gt;
+                &lt;input type="radio" id="other" name="gender" value="other" /&gt;
+                &lt;label for="other"&gt;Other&lt;/label&gt;
+                &lt;br&gt;&lt;br&gt;
+                &lt;input type="submit" value="Submit" /&gt;
+            &lt;/form&gt; 
+          </code>
+        </pre>
+      </section>
+      <br />
+      <section>
+        <h4>HTML Result</h4>
+        <div>
+          <h5>Display Radio Buttons</h5>
+          <form action="/action_page.php">
+            <p>Please select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+            <br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </section>
+    <br />
+  </article>
+  <br />
+  <a href="inputTypes.html">BACK</a>
+</body>
+
+</html>

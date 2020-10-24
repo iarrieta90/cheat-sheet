@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input types reset</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>Reset</h2>
+    </header>
+    <hr />
+      <section>
+        <h3>Description</h3>
+        <p>
+          The <code>&lt;input type="reset"&gt;</code> defines a reset button
+          which resets all form values to its initial values.
+        </p>
+        <p>
+          <strong>Tip: </strong>Avoid reset buttons in your forms! It is
+          frustrating for users if they click them by mistake.
+        </p>
+      </section><br>
+      <section>
+        <h3>Example</h3>
+        <section>
+          <h4>Code Example</h4>
+          <pre>
+            <code>
+            &lt;h5&gt;Display a Reset Butto&lt;/h5&gt;
+            &lt;p&gt;Click on the reset button to reset the form.&lt;/p&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="email"&gt;Enter your email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email" /&gt;&lt;br&gt;&lt;br&gt;
+    
+                &lt;label for="pin"&gt;Enter a PIN:&lt;/label&gt;
+                &lt;input
+                    type="text"
+                    id="pin"
+                    name="pin"
+                    maxlength="4"
+                /&gt;&lt;br&gt;&lt;br&gt;
+    
+                &lt;input type="reset" value="Reset" /&gt;
+                &lt;input type="submit" value="Submit" /&gt;
+            &lt;/form&gt;   
+          </code>
+          </pre>
+        </section>
+        <section>
+          <h4>HTML Result</h4>
+          <div>
+            <h5>Display a Reset Button</h5>
+            <p>Click on the reset button to reset the form.</p>
+            <form action="/action_page.php">
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" name="email" /><br /><br />
+
+              <label for="pin">Enter a PIN:</label>
+              <input type="text" id="pin" name="pin" maxlength="4" /><br /><br />
+
+              <input type="reset" value="Reset" />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </section>
+    <br />
+  </article>
+  <br />
+  <a href="inputTypes.html">BACK</a>
+</body>
+
+</html>

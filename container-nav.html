@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cheat Sheet</title>
-  </head>
-  <body>
-    <article>
-      <header>
-        <h2>Nav</h2>
-      </header>
-      <section>
-        <h3>Description</h3>
-        <p>The &lt;nav&gt; tag defines a set of navigation links.</p>
-        <p>
-          Notice that NOT all links of a document should be inside a &lt;nav&gt; element. The &lt;nav&gt; element is intended only for major block of navigation links.
-        </p>
-        <p>
-            Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
-        </p>
 
-        <h3>Example</h3>
-        <p>In this example, a &lt;nav&gt; block is used to contain an unordered list (&lt;ul&gt;) of links. With appropriate CSS, this can be presented as a sidebar, navigation bar, or drop-down menu.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Containers - Nav</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>Nav</h2>
+    </header>
+    <hr>
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>The <code>&lt;nav&gt;</code> tag defines a set of navigation links.</p>
+        <p>
+          Notice that NOT all links of a document should be inside a <code>&lt;nav&gt;</code> element. The
+          <code>&lt;nav&gt;</code> element is intended only for major block of navigation links.
+        </p>
+        <p>
+          Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the
+          initial rendering of this content.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h3>Example</h3>
+      <p>In this example, a <code>&lt;nav&gt;</code> block is used to contain an unordered list
+        (<code>&lt;ul&gt;</code>) of links. With appropriate CSS, this can be presented as a sidebar, navigation bar,
+        or
+        drop-down menu.</p>
+      <section>
         <h4>Code Example</h4>
-        <code>
+        <div>
           <pre>
+          <code>
             &lt;nav&gt;
                 &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href="#"&gt;About us&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
             &lt;/nav&gt;
-            </pre>
-        </code>
+          </code>
+        </pre>
+        </div>
+      </section>
+      <section>
         <h4>HTML Result</h4>
-        <nav class="menu">
+        <div>
+          <nav class="menu">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About us</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
+        </div>
       </section>
-    </article>
-    <a href="containers.html">BACK</a>
-  </body>
+    </section><br>
+  </article><br>
+  <a href="containers.html">BACK</a>
+</body>
+
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input types file</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>File</h2>
+    </header>
+    <hr />
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>
+          The <code>&lt;input type="file"&gt;</code> defines a file-select
+          field and a "Browse" button for file uploads.
+        </p>
+        <p>
+          To define a file-select field that allows multiple files to be
+          selected, add the "multiple" attribute.
+        </p>
+        <p>
+          <strong>Tip:</strong>Always add the <code>&lt;label&gt;</code> tag
+          for best accessibility practices!
+        </p>
+      </div>
+    </section>
+    <br />
+    <section>
+      <h3>Example</h3>
+      <section>
+        <h4>Code Example</h4>
+        <pre>
+        <code>
+            &lt;h5&gt;
+                Show a file-select field which allows only one file to be chosen:
+            &lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="myfile">Select a file:&lt;/label&gt;
+                &lt;input type="file" id="myfile" name="myfile" /&gt;&lt;br&gt;&lt;br&gt;
+                &lt;input type="submit" /&gt;
+            &lt;/form&gt;
+      
+            &lt;h5&gt;
+                Show a file-select field which allows multiple files:
+            &lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="myfiles">Select files:&lt;/label&gt;
+                &lt;input
+                    type="file"
+                    id="myfiles"
+                    name="myfiles"
+                    multiple
+                /&gt;&lt;br&gt;&lt;br&gt;
+                &lt;input type="submit" /&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+      </section>
+      <br />
+      <section>
+        <h4>HTML Result</h4>
+        <div>
+          <h5>
+            Show a file-select field which allows only one file to be chosen:
+          </h5>
+          <form action="/action_page.php">
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile" /><br /><br />
+            <input type="submit" />
+          </form>
+        </div>
+        <div>
+          <h5>Show a file-select field which allows multiple files:</h5>
+          <form action="/action_page.php">
+            <label for="myfiles">Select files:</label>
+            <input type="file" id="myfiles" name="myfiles" multiple /><br /><br />
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+    </section>
+    <br />
+  </article>
+  <br />
+  <a href="inputTypes.html">BACK</a>
+</body>
+
+</html>
