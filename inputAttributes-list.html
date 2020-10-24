@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list Attribute</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>The list Attribute</h2>
+        </header>
+        <section>
+            <h3>Description</h3>
+            <p>The input <strong>list</strong> attribute refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element.</p>
+        </section>
+        <section>
+            <h3>Example</h3>
+            <h4>Code Example:</h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;The input list attribute&lt;/h2&gt;
+                    &lt;p&gt;The list attribute refers to a datalist element that contains pre-defined options for an input element.&lt;/p&gt;
+                    &lt;form action="/action_page.php"&gt;
+                        &lt;input list="browsers" name="browser"&gt;
+                        &lt;datalist id="browsers"&gt;
+                            &lt;option value="Internet Explorer"&gt;
+                            &lt;option value="Firefox"&gt;
+                            &lt;option value="Chrome"&gt;
+                            &lt;option value="Opera"&gt;
+                            &lt;option value="Safari"&gt;
+                        &lt;/datalist&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                    &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt;The datalist tag is not supported in Safari 12.0 (or earlier).&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h4>HTML Result:</h4>
+                <h2>The input list attribute</h2>
+                <p>The list attribute refers to a datalist element that contains pre-defined options for an input element.</p>
+                <form action="/action_page.php">
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <input type="submit" value="Submit">
+                </form>
+                <p><b>Note:</b> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+        </section>
+    </article>
+    <a href="inputAttributes.html">BACK</a>
+</body>
+</html>
