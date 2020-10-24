@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Form Attribute</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>Button Form Attribute</h2>
+        </header>
+        <hr>
+        
+        <section>
+            <h3>Description</h3>
+            <p>The form attribute specifies the form the button belongs to.</p>
+            <p>The The value of this attribute must be equal to the id attribute of a <code>&lt;form&gt;</code> element in the same document.</p>
+        </section>
+        
+        <section>
+            <h3>Example</h3>
+                <section>
+                    <h4>Code Example</h4>
+                        <pre>
+                            <code>&lt;html&gt;</code><br>
+                            <code>&lt;body&gt;</code><br>
+                                <code>&lt;form action="/action_page.php" method="get" id="nameform"&gt;</code><br>
+                                    <code>&lt;label for="fname"&gt;First name:&lt;/label&gt;</code><br>
+                                    <code>&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;</code><br>
+                                    <code>&lt;label for="lname"&gt;Last name:&lt;/label&gt;</code><br>
+                                    <code>&lt;input type="text" id="lname" name="lname"&gt;</code><br>
+                                <code>&lt;/form&gt;</code><br>
+                                <code>&lt;p&gt;The button below is outside the form element, but still part of the form.&lt;/p&gt;</code><br>
+                                <code>&lt;button type="submit" form="nameform" value="Submit"&gt;Submit&lt;/form&gt;</code><br>
+                            <code>&lt;/body&gt;</code><br>
+                            <code>&lt;/html&gt;</code><br>
+                        </pre>
+                </section>
+                <section>
+                    <h4>HTML Result</h4>
+                        <form action="/action_page.php" method="get" id="nameform">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname">
+                        </form>
+                        <p>The button below is outside the form element, but still part of the form.</p>
+                        <button type="submit" form="nameform" value="Submit">Submit</button>
+                </section>
+        </section>
+        <hr>
+</article>
+<a href="formElements.html">BACK</a>
+</body>
+</html>

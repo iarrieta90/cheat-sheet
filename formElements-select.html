@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Form Element</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>Select Form Element</h2>
+        </header>
+        <hr>
+        
+        <section>
+            <h3>Description</h3>
+            <p>The <code>&lt;select&gt;</code> element is used to create a drop-down list.</p>
+            <p>The <code>&lt;select&gt;</code> element is most often used in a form, to collect user input.</p>
+            <p>The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).</p>
+            <p>The id attribute is needed to associate the drop-down list with a label.</p>
+            <p>The <code>&lt;option&gt;</code> tags inside the <code>&lt;select&gt;</code> element define the available options in the drop-down list.</p>
+        </section>
+        
+        <section>
+            <h3>Example</h3>
+                <section>
+                    <h4>Code Example</h4>
+                        <pre>
+                            <code>&lt;html&gt;</code><br>
+                            <code>&lt;body&gt;</code><br>
+                                <code>&lt;form&gt;</code><br>
+                                    <code>&lt;label for="cars"&gt;Choose a car:&lt;/label&gt;</code><br>
+                                    <code>&lt;select name="cars" id="cars"&gt;</code><br>
+                                    <code>&lt;option value="volvo"&gt;Volvo&lt;/option&gt;</code><br>
+                                    <code>&lt;option value="saab"&gt;Saab&lt;/option&gt;</code><br>
+                                    <code>&lt;option value="opel"&gt;Opel&lt;/option&gt;</code><br>
+                                    <code>&lt;option value="audi"&gt;Audi&lt;/option&gt;</code><br>
+                                    <code>&lt;input type="submit"  value="Submit"&gt;</code><br>
+                                <code>&lt;/form&gt;</code><br>
+                            <code>&lt;/body&gt;</code><br>
+                            <code>&lt;/html&gt;</code><br>
+                        </pre>
+                </section>
+                <section>
+                    <h4>HTML Result</h4>
+                        <form>
+                            <label for="cars">Choose a car:</label>
+                            <select name="cars" id="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                </section>
+        </section>
+        <hr>
+    <a href="formElements.html">BACK</a>
+</article>
+</body>
+</html>
