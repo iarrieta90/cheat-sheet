@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheat Sheet</title>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h2>Number</h2>
+      </header>
+      <hr />
+      <section>
+        <section>
+          <h3>Description</h3>
+          <p>
+            The <code>&lt;input type="number"&gt;</code> defines a field for
+            entering a number.
+          </p>
+          <p>Use the following attributes to specify restrictions:</p>
+          <ul>
+            <li><strong>max</strong> - specifies the maximum value allowed</li>
+            <li><strong>min</strong> - specifies the minimum value allowed</li>
+            <li>
+              <strong>step</strong> - specifies the legal number intervals
+            </li>
+            <li><strong>value</strong> - Specifies the default value</li>
+          </ul>
+          <p>
+            <strong>Tip: </strong>Always add the <code>&lt;label&gt;</code> tag
+            for best accessibility practices!
+          </p>
+        </section>
+        <br />
+        <section>
+          <h3>Example</h3>
+          <section>
+            <h4>Code Example</h4>
+            <code>
+              <pre>
+            &lt;h5&gt;Display a Number Field&lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="quantity"&gt;Quantity (between 1 and 5):&lt;/label&gt;
+                &lt;input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    max="5"
+                /&gt;
+                &lt;input type="submit" /&gt;
+              &lt;/form&gt;
+            </pre
+              >
+            </code>
+          </section>
+          <br />
+          <section>
+            <h4>HTML Result</h4>
+            <h5>Display a Number Field</h5>
+
+            <form action="/action_page.php">
+              <label for="quantity">Quantity (between 1 and 5):</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="5"
+              />
+              <input type="submit" />
+            </form>
+          </section>
+        </section>
+      </section>
+      <br />
+    </article>
+    <br />
+    <a href="inputTypes.html">BACK</a>
+  </body>
+</html>

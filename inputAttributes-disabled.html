@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>disabled Attribute</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>The disabled Attribute</h2>
+        </header>
+        <section>
+            <h3>Description</h3>
+            <p>The input <strong>disabled</strong> attribute specifies that an input field should be disabled.</p>
+            <p>A disabled input field is unusable and un-clickable.</p>
+            <p>The value of a disabled input field will not be sent when submitting the form!</p>
+        </section>
+        <section>
+            <h3>Example</h3>
+            <h4>Code Example:</h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;The input disabled attribute&lt;/h2&gt;
+                    &lt;p&gt;The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):&lt;/p&gt;
+                    &lt;form&gt;
+                        &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+                        &lt;input type="text" id="fname" name="fname" value="John" disabled&gt;&lt;br&gt;
+                        &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+                        &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h4>HTML Result:</h4>
+                <h2>The input disabled attribute</h2>
+                <p>The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):</p>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John" disabled><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </section>
+    </article>
+    <br>
+    <a href="inputAttributes.html">BACK</a>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input types hidden</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>Hidden</h2>
+    </header>
+    <hr />
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>
+          The <code>&lt;input type="file"&gt;</code> defines a hidden input
+          field.
+        </p>
+        <p>
+          A hidden field let web developers include data that cannot be seen
+          or modified by users when a form is submitted.
+        </p>
+        <p>
+          A hidden field often stores what database record that needs to be
+          updated when the form is submitted.
+        </p>
+        <p>
+          <strong>Note:</strong>While the value is not displayed to the user
+          in the page's content, it is visible (and can be edited) using any
+          browser's developer tools or "View Source" functionality. Do not use
+          hidden inputs as a form of security!
+        </p>
+      </div>
+    </section>
+    <br />
+    <section>
+      <h3>Example</h3>
+      <section>
+        <h4>Code Example</h4>
+        <pre>
+        <code>
+            &lt;h5&gt;A Hidden Field (look in source code&lt;/h5&gt;
+            &lt;form action="/action_page.php"&gt;
+                &lt;label for="fname">First name:&lt;/label&gt;
+                &lt;input type="text" id="fname" name="fname" /&gt;&lt;br&gt;&lt;br&gt;
+                &lt;input type="hidden" id="custId" name="custId" value="3487" /&gt;
+                &lt;input type="submit" value="Submit" /&gt;
+            &lt;/form&gt;
+            &lt;p&gt;
+            &lt;strong&gt;Note: &lt;/strong&gt; The hidden field is not shown to the user,
+                but the data is sent when the form is submitted.
+            &lt;/p&gt;    
+          </code>
+        </pre>
+      </section>
+      <br />
+      <section>
+        <h4>HTML Result</h4>
+        <div>
+          <h5>A Hidden Field (look in source code)</h5>
+          <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <input type="hidden" id="custId" name="custId" value="3487" />
+            <input type="submit" value="Submit" />
+          </form>
+          <p>
+            <strong>Note:</strong> The hidden field is not shown to the user,
+            but the data is sent when the form is submitted.
+          </p>
+        </div>
+      </section>
+    </section>
+    <br />
+  </article>
+  <br />
+  <a href="inputTypes.html">BACK</a>
+</body>
+
+</html>

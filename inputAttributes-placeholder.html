@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placeholder Attribute</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>The placeholder Attribute</h2>
+        </header>
+        <section>
+            <h3>Description</h3>
+            <p>The input <strong>placeholder</strong> attribute specifies short a hint that describes the expected value of an input field (a sample value or a short description of the expected format).</p>
+            <p>The short hint is displayed in the input field before the user enters a value.</p>
+            <p>The placeholder attribute works with the following input types: text, search, url, tel, email, and password.</p>
+        </section>
+        <section>
+            <h3>Example</h3>
+            <h4>Code Example:</h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;The input placeholder attribute&lt;/h2&gt;
+                    &lt;p&gt;The placeholder attribute specifies a short hint that describes the expected value of an input field.&lt;/p&gt;
+                    &lt;form action="/action_page.php"&gt;
+                        &lt;label for="phone">Enter a phone number:&lt;/label&gt;
+                        &lt;input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">&lt;br>&lt;br&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h4>HTML Result:</h4>
+                <h2>The input placeholder attribute</h2>
+                <p>The placeholder attribute specifies a short hint that describes the expected value of an input field.</p>
+                <form action="/action_page.php">
+                    <label for="phone">Enter a phone number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </section>
+    </article>
+    <br>
+    <a href="inputAttributes.html">BACK</a>
+</body>
+</html>

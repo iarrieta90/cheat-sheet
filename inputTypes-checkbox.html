@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input types checkbox</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h2>Checkbox</h2>
+    </header>
+    <hr />
+      <section>
+        <h3>Description</h3>
+        <div>
+          <p>
+            The <code>&lt;input type="checkbox"&gt;</code> defines a checkbox.
+          </p>
+          <p>
+            The checkbox is shown as a square box that is ticked (checked) when
+            activated.
+          </p>
+          <p>
+            Checkboxes are used to let a user select one or more options of a
+            limited number of choices.
+          </p>
+          <p>
+            <strong>Tip:</strong>Always add the <code>&lt;label&gt;</code> tag
+            for best accessibility practices!
+          </p>
+        </div>
+      </section>
+      <br />
+      <section>
+        <h3>Example</h3>
+        <section>
+          <h4>Code Example</h4>
+          <div>
+            <pre>
+            <code>
+            &lt;h5&gt;Show Checkboxes&lt;/h5&gt;
+
+            &lt;form action="/action_page.php">
+                &lt;input type="checkbox" id="vehicle1" na&lt;label&gt;&lt;br&gt;
+                &lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
+                &lt;label for="vehicle2"&gt; I have a car&lt;label&gt;&lt;br&gt;
+                &lt;input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"&gt;
+                &lt;label for="vehicle3"&gt; I have a boat&lt;label&gt;&lt;br&gt;
+                &lt;input type="submit" value="Submit">
+            &lt;form&gt;
+          </code>
+        </pre>
+          </div>
+        </section>
+        <section>
+          <h4>HTML Result</h4>
+          <div>
+            <h5>Show Checkboxes</h5>
+            <form action="/action_page.php">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1"> I have a bike</label><br />
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+              <label for="vehicle2"> I have a car</label><br />
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+              <label for="vehicle3"> I have a boat</label><br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </section>
+    <br />
+  </article>
+  <br />
+  <a href="inputTypes.html">BACK</a>
+</body>
+
+</html>

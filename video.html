@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Video</title>
 </head>
+
 <body>
-    
+    <article>
+        <header>
+            <h2>HTML Video</h2>
+        </header>
+        <hr />
+        <section>
+            <h3>Description</h3>
+            <div>
+                <p>The HTML <code>&lt;video&gt;</code> element is used to show a video on a web page. </p>
+                <h4>How it works:</h4>
+                <p>The <strong>controls</strong> attribute adds video controls, like play, pause, and volume.
+                </p>
+                <p>It is a good idea to always include <strong>widht</strong> and <strong>height</strong>
+                    attributes. If height and width are not set, the page might flicker while the video loads.
+                </p>
+                <p>The <code>&lt;source&gt;</code> element allows you to specify alternative video files which
+                    the
+                    browser may choose from. The browser will use the first recognized format.</p>
+                <p>The text between the <code>&lt;video&gt;</code> and <code>&lt;/video&gt;</code> tags will
+                    only be
+                    displayed in browsers that do not support the <code>&lt;video&gt;</code> element.</p>
+            </div>
+        </section>
+        <section>
+            <h3>Example</h3>
+            <section>
+                <h4>Code Example</h4>
+                <div>
+                    <pre>
+                        <code>
+                    &lt;video width="320" height="240" controls&gt;
+                        &lt;source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"&gt;
+                        &lt;source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/oog"&gt;
+                        Your browser does not support the video tag.
+                    &lt;/video&gt;
+                </code>
+            </pre>
+                </div>
+            </section>
+            <section>
+                <h4>HTML Result</h4>
+                <div>
+                    <video width="320" height="240" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/oog">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </section><br>
+    </article><br>
+    <a href="index.html">BACK</a>
 </body>
+
 </html>

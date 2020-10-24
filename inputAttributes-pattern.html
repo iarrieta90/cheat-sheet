@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern Attribute</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>The pattern Attribute</h2>
+        </header>
+        <section>
+            <h3>Description</h3>
+            <p>The input <strong>pattern</strong> attribute specifies a regular expression that the input field's value is checked against, when the form is submitted.</p>
+            <p>The pattern attribute works with the following input types: text, date, search, url, tel, email, and password.</p>
+            <p><strong>Tip:</strong> Use the global title attribute to describe the pattern to help the user.</p>
+            <p><strong>Tip:</strong> Learn more about regular expressions in our JavaScript tutorial.</p>
+        </section>
+        <section>
+            <h3>Example</h3>
+            <h4>Code Example:</h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;The input pattern attribute&lt;/h2&gt;
+                    &lt;p&gt;The pattern attribute specifies a regular expression that the input element's value is checked against.&lt;/p&gt;
+                    &lt;form action="/action_page.php"&gt;
+                        &lt;label for="country_code"&gt;Country code:&lt;/label&gt;
+                        &lt;input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"&gt;&lt;br&gt;&lt;br&gt;
+                        &lt;input type="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                    &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The pattern attribute of the input tag is not supported in Safari 10 (or earlier).&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h4>HTML Result:</h4>
+                <h2>The input pattern attribute</h2>
+                <p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+                <form action="/action_page.php">
+                    <label for="country_code">Country code:</label>
+                    <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+        </section>
+    </article>
+    <a href="inputAttributes.html">BACK</a>
+</body>
+</html>

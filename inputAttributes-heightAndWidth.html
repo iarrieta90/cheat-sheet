@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height and width Attributes</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>The height and width Attributes</h2>
+        </header>
+        <section>
+            <h3>Description</h3>
+            <p>The input <strong>height</strong> and <strong>width </strong>attributes specify the height and width of an &lt;input type="image"&gt; element.</p>
+            <p><strong>Tip:</strong> Always specify both the height and width attributes for images. If height and width are set, the space required for the image is reserved when the page is loaded. Without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout will change during loading (while the images load).</p>
+        </section>
+        <section>
+            <h3>Example</h3>
+            <h4>Code Example:</h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;The input height and width attributes&lt;/h2&gt;
+                    &lt;p&gt;The height and width attributes specify the height and width of an input type="image" element.&lt;/p&gt;
+                    &lt;form action="/action_page.php"&gt;
+                        &lt;label for="fname">First name:&lt;/label&gt;
+                        &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+                        &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+                        &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+                        &lt;input type="image" src="https://www.w3schools.com/htmL/img_submit.gif" alt="Submit" width="48" height="48"&gt;
+                    &lt;/form&gt;
+                    &lt;p&gt;&lt;b>Note:&lt;/b&gt; The input type="image" sends the X and Y coordinates of the click that activated the image button.&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h4>HTML Result:</h4>
+                <h2>The input height and width attributes</h2>
+                <p>The height and width attributes specify the height and width of an input type="image" element.</p>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="image" src="https://www.w3schools.com/htmL/img_submit.gif" alt="Submit" width="48" height="48">
+                </form>
+                <p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+        </section>
+    </article>
+    <a href="inputAttributes.html">BACK</a>
+</body>
+</html>
