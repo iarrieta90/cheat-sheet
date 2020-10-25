@@ -11,18 +11,18 @@
             <h2>Canvas</h2>
         </header>
         <hr>
-        
         <section>
             <h3>Description</h3>
             <p>The <code>&lt;canvas&gt;</code> tag is used to draw graphics, on the fly, via scripting</p>
             <p>The <code>&lt;canvas&gt;</code> tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.</p>
         </section>
-        
         <section>
             <h3>Example</h3>
                 <section>
-                    <h4>Code Example</h4>
+                    <h4>Code Example:</h4>
                         <pre>
+                            <b>Example 1:</b>
+                            <br>
                             <code>&lt;html&gt;</code><br>
                             <code>&lt;body&gt;</code><br>
                                 <code>&lt;canvas id="myCanvas">Your browser does not support the canvas tag.&gt;&lt;/canvas&gt;</code><br>
@@ -36,7 +36,9 @@
                                 <code>&lt;/script&gt;</code><br>
                             <code>&lt;/body&gt;</code><br>
                             <code>&lt;/html&gt;</code><br>
-        
+                            <br>
+                            <b>Example 2:</b>
+                            <br>
                             <code>&lt;html&gt;</code><br>
                             <code>&lt;body&gt;</code><br>
                                 <code>&lt;canvas id="myCanvas">Your browser does not support the canvas tag.&gt;&lt;/canvas&gt;</code><br>
@@ -50,10 +52,11 @@
                                 <code>&lt;/script&gt;</code><br>
                             <code>&lt;/body&gt;</code><br>
                             <code>&lt;/html&gt;</code><br>
-                        </pre>   
+                        </pre>
                 </section>
                 <section>
-                    <h4>HTML Result</h4>
+                    <h4>HTML Result:</h4>
+                        <h5>Example 1:</h5>
                         <canvas id="myCanvas1">Your browser does not support the canvas tag.</canvas>
                         <script>
                             var c = document.getElementById("myCanvas1");
@@ -61,6 +64,7 @@
                             ctx.fillStyle = "#FF0000";
                             ctx.fillRect(0, 0, 80, 100);
                         </script>
+                        <h5>Example 2:</h5>
                         <canvas id="myCanvas2">Your browser does not support the canvas tag.</canvas>
                         <script>
                             var c = document.getElementById("myCanvas2");
