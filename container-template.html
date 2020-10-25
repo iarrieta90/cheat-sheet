@@ -6,50 +6,56 @@
     <title>Template</title>
 </head>
 <body>
- <article>
-    <header>
-        <h2>Template</h2>
-    </header>
-    <hr>
-    <section>
-        <h3>Description</h3>
-        <p>The <code>&lt;template&gt;</code> tag is used as a container to hold some HTML content hidden from the user when the page loads.</p>
-    </section>
-    <section> 
-        <h3>Example</h3>
+    <article>
+        <header>
+            <h2>Template</h2>
+        </header>
+        <hr>
         <section>
-            <h4>Code Example</h4>
-                <pre>
-                <code>&lt;html&gt;</code><br>
-                <code>&lt;body&gt;</code><br>
-                <code>&lt;template&gt;</code><br>
-                    <code>&lt;h5&gt;Flower within template tag&lt;/h5&gt;</code><br>
-                    <code>&lt;img src="img_white_flower.jpg" width="214" height="204&gt;</code><br>
-                <code>&lt;/template&gt;</code><br>
-                <code>&lt;/body&gt;</code><br>
-                <code>&lt;/html&gt;</code><br>
-                </pre>
-                <pre>
-                <code>&lt;html&gt;</code><br>
-                <code>&lt;body&gt;</code><br>
-                    <code>&lt;h5&gt;Flower without template tag&lt;/h5&gt;</code><br>
-                    <code>&lt;img src="img_white_flower.jpg" width="214" height="204&gt;</code><br>
-                <code>&lt;/body&gt;</code><br>
-                <code>&lt;/html&gt;</code><br>
-                </pre>
+            <h3>Description</h3>
+            <p>The <code>&lt;template&gt;</code> tag is used as a container to hold some HTML content hidden from the user when the page loads.</p>
         </section>
         <section>
-            <h4>HTML Result</h4>
-            <template>
-                <h5>Flower within template tag</h5>
-                <img src="img_white_flower.jpg" alt="Image in template tag" width="214" height="204">
-            </template>
-                <h5>Flower without template tag</h5>
-                <img src="img_white_flower.jpg" alt="Image without template tag" width="214" height="204">
+            <h3>Example</h3>
+            <section>
+                <h4>Code Example:</h4>
+                    <pre>
+                        <code>&lt;h2&gt;</code>The template Element<code>&lt;/h2&gt;</code>
+                        <code>&lt;p&gt;</code>Click the button below to display the hidden content from the template element.<code>&lt;/p&gt;</code>
+                        <code>&lt;button onclick="showContent()">Show hidden content<code>&lt;/button&gt;</code>
+                        <code>&lt;template&gt;</code><br>
+                        <code>&lt;h5&gt;Flower within template tag&lt;/h5&gt;</code><br>
+                        <code>&lt;img src="https://www.w3schools.com/TagS/img_white_flower.jpg" width="214" height="204&gt;</code><br>
+                        <code>&lt;/template&gt;</code><br>
+                        <code>&lt;script&gt;</code>
+                            function showContent() {
+                                var temp = document.getElementsByTagName("template")[0];
+                                var clon = temp.content.cloneNode(true);
+                                document.body.appendChild(clon);
+                            }
+                        <code>&lt;/script&gt;</code>
+                    </pre>
+            </section>
+            <section>
+                <h4>HTML Result:</h4>
+                    <h2>The template Element</h2>
+                    <p>Click the button below to display the hidden content from the template element.</p>
+                    <button onclick="showContent()">Show hidden content</button>
+                    <template>
+                    <h2>Flower</h2>
+                    <img src="https://www.w3schools.com/TagS/img_white_flower.jpg" width="214" height="204">
+                    </template>
+                    <script>
+                        function showContent() {
+                        var temp = document.getElementsByTagName("template")[0];
+                        var clon = temp.content.cloneNode(true);
+                        document.body.appendChild(clon);
+                    }
+                    </script>
+            </section>
         </section>
-    </section>
+    </article>
     <hr>
- </article>
     <a href="containers.html">BACK</a>
 </body>
 </html>
